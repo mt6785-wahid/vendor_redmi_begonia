@@ -795,8 +795,8 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/firmware/mono.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/mono.cnt \
     vendor/redmi/begonia/proprietary/vendor/firmware/mt6631_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6631_fm_v1_coeff.bin \
     vendor/redmi/begonia/proprietary/vendor/firmware/mt6631_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6631_fm_v1_patch.bin \
-    vendor/redmi/begonia/proprietary/vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_bt_1a_1_hdr.bin \
     vendor/redmi/begonia/proprietary/vendor/firmware/soc1_0_patch_mcu_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_patch_mcu_2a_1_hdr.bin \
+    vendor/redmi/begonia/proprietary/vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_bt_1a_1_hdr.bin \
     vendor/redmi/begonia/proprietary/vendor/firmware/soc1_0_ram_bt_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_bt_2a_1_hdr.bin \
     vendor/redmi/begonia/proprietary/vendor/firmware/soc1_0_ram_mcu_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_mcu_2a_1_hdr.bin \
     vendor/redmi/begonia/proprietary/vendor/firmware/soc1_0_ram_wifi_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_wifi_2a_1_hdr.bin \
@@ -1099,7 +1099,7 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/lib/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaalservice.so \
     vendor/redmi/begonia/proprietary/vendor/lib/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaedv.so \
     vendor/redmi/begonia/proprietary/vendor/lib/libakm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libakm.so \
-    vendor/redmi/begonia/proprietary/vendor/lib/libalsautils-v30.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils-v30.so \
+    vendor/redmi/begonia/proprietary/vendor/lib/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils.so \
     vendor/redmi/begonia/proprietary/vendor/lib/libarcsoft_dualcam_refocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus.so \
     vendor/redmi/begonia/proprietary/vendor/lib/libarmnn_ndk.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarmnn_ndk.mtk.so \
     vendor/redmi/begonia/proprietary/vendor/lib/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_param_parser-vnd.so \
@@ -1670,7 +1670,7 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/lib64/libalLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalLDC.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libalRnBRT_GL_GBWRAPPER.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalRnBRT_GL_GBWRAPPER.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libalhLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalhLDC.so \
-    vendor/redmi/begonia/proprietary/vendor/lib64/libalsautils-v30.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils-v30.so \
+    vendor/redmi/begonia/proprietary/vendor/lib64/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libapu-apuwareutils.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapu-apuwareutils.mtk.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libapu-apuwarexrp.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapu-apuwarexrp.mtk.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libapu-frontend.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapu-frontend.so \
@@ -2085,12 +2085,13 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/thh/ta/fc32e4da17d342449b01c992d56d71bf.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/fc32e4da17d342449b01c992d56d71bf.ta
 
 PRODUCT_PACKAGES += \
+    libfmjni \
     LocationEM2 \
     YGPS \
     EngineerMode \
     ImsService \
-    SoterService \
     EmCamera \
+    SoterService \
     HotwordEnrollmentOKGoogleCORTEXM4 \
     HotwordEnrollmentXGoogleCORTEXM4 \
     com.android.hotwordenrollment.common.util \
