@@ -1790,7 +1790,7 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/lib64/libvpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpu.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libvsim.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvsim.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libwapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwapi.so \
-    vendor/redmi/begonia/proprietary/vendor/lib64/libwifi-hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal.so \
+    vendor/redmi/begonia/proprietary/vendor/lib64/libwifi-hal-mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal-mtk.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libwifitest.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifitest.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libwlparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwlparser.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libwlservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwlservice.so \
